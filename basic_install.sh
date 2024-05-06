@@ -415,6 +415,7 @@ git_clone_and_setup_script(){
     # Change directory 
     cd "${EVILGOPHISH_HOME_DIR}" > /dev/null
     # Run it!
+    chmod +x "${EVILGOPHISH_HOME_DIR}"
     ./setup.sh "${root_domain}" "${evilginx2_subs}" "${e_root_bool}" \
     "${redirect_url}" "${feed_bool}" "${rid_replacement}" "${bl_bool}"
 
